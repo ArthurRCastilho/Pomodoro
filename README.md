@@ -26,6 +26,8 @@ Neste projeto contém estruturas de fundamentos de flutter, sendo elas:
 - ``Provider``
 - ``mobx``
 - ``flutter_mobx``
+- ``build_runner``
+- ``mobx_codegen``
 
 ### Tecnologias utilizadas
 - ``VSCode``
