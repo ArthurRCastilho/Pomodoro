@@ -7,19 +7,19 @@ Neste aplicativo, aprendi conceitos de MobX, ...
 
 ### Layout
 
-> :construction: Projeto em construção :construction:
+<img src="./assets/imgs/PomodoroAppIMG.png" alt="Trabalhando" width="270px"> <img src="./assets/imgs/DescansarIMG.png" alt="Descansando" width="270px">
 
 #### GIFS
 
-> :construction: Projeto em construção :construction:
+<img src="./assets/gifs/GifPomodoroApp.gif" alt="TrabalhandoGif" width="270px"> <img src="./assets/gifs/GifDescansarApp.gif" alt="DescansandoGif" width="270px">
 
 ## Como foi feito este projeto?
 
 Este projeto foi totalmente feito a partir de um curso da udemy, na qual você pode [clicar aqui](https://www.udemy.com/course/curso-flutter/?couponCode=ST6MT42324) para acessar o curso<br>
 
 Neste projeto contém estruturas de fundamentos de flutter, sendo elas:
-- [ ] MobX;
-- [ ] Cronômetro;
+- [X] MobX;
+- [X] Cronômetro;
 
 
 ### Dependências

@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:pomodoro/pages/pomodoro_page.dart';
+import 'package:pomodoro/store/pomodoro.store.dart';
+import 'package:provider/provider.dart';
 
 void main() {
   runApp(const MyApp());
@@ -7,27 +9,32 @@ void main() {
 
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
-
-  // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-      title: 'Flutter Demo',
-      theme: ThemeData(
-        colorScheme: ColorScheme.fromSwatch().copyWith(
-          primary: Colors.redAccent,
-          secondary: Colors.white,
-          tertiary: Colors.blueAccent,
-          error: Colors.red,
+    return MultiProvider(
+      providers: [
+        Provider<PomodoroStore>(
+          create: (_) => PomodoroStore(),
         ),
-        appBarTheme: AppBarTheme(
-          backgroundColor: Theme.of(context).colorScheme.primary,
+      ],
+      child: MaterialApp(
+        title: 'Flutter Demo',
+        theme: ThemeData(
+          colorScheme: ColorScheme.fromSwatch().copyWith(
+            primary: Colors.redAccent,
+            secondary: Colors.white,
+            tertiary: Colors.blueAccent,
+            error: Colors.red,
+          ),
+          appBarTheme: AppBarTheme(
+            backgroundColor: Theme.of(context).colorScheme.primary,
+          ),
+          scaffoldBackgroundColor: Colors.white,
+          useMaterial3: true,
         ),
-        scaffoldBackgroundColor: Colors.white,
-        useMaterial3: true,
+        debugShowCheckedModeBanner: false,
+        home: const Pomodoro(),
       ),
-      debugShowCheckedModeBanner: false,
-      home: const Pomodoro(),
     );
   }
 }
