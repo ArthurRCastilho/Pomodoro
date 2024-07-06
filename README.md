@@ -2,7 +2,7 @@
 Este é um aplicativo de cronometro, com principal intuito de aprender MobX em flutter
 
 ### O que eu aprendi neste aplicativo
-Neste aplicativo, aprendi conceitos de MobX, ...
+Neste aplicativo, aprendi conceitos de MobX.
 <br>
 
 ### Layout
